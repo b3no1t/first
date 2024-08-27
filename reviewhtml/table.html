@@ -6,6 +6,12 @@
     <title>Table</title>
   </head>
   <body>
+    <!--
+<thead> … </thead> : section de l'en-tête du tableau
+<tbody> …  </tbody> : section du corps du tableau
+<tfoot> … </tfoot> : section du pied du tablea
+-->
+
     <table
       style="
         width: 100%;
@@ -15,49 +21,62 @@
         color: red;
       "
     >
-      <caption style="text-align: left; color: aqua">
-        intitulé du tableau
-      </caption>
       <tr>
         <th>titre de la colonne 1</th>
         <th>titre de la colonne 2</th>
       </tr>
-      <tr>
-        <td style="background: blue">item 1</td>
-        <td>item 2</td>
-      </tr>
-      <tr>
-        <td>item 1</td>
-        <td>item 2</td>
-      </tr>
-      <tr>
-        <td style="background: blue">item 1</td>
-        <td>item 2</td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <!-- colspan = le nombre de colonne dans le tableau, ici 2 donc la celllule en question prends la place de deux cellules  -->
-          <table
-            style="
-              margin: 0 auto;
-              width: 50%;
-              background: gray;
-              border: 10px solid red;
-            "
-          >
-            <tr>
-              <th>A</th>
-              <th>B</th>
-              <th>C</th>
-            </tr>
-            <tr>
-              <td>A</td>
-              <td>B</td>
-              <td>C</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+      <thead>
+        <tr>
+          <td>thead</td>
+          <td>thead 2</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="background: blue">item 1</td>
+          <td>item 2</td>
+        </tr>
+        <tr>
+          <td>item 1</td>
+          <td>item 2</td>
+        </tr>
+        <tr>
+          <td style="background: blue">item 1</td>
+          <td>item 2</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- colspan = le nombre de colonne dans le tableau, ici 2 donc la celllule en question prends la place de deux cellules  -->
+            <table
+              style="
+                margin: 0 auto;
+                width: 50%;
+                background: gray;
+                border: 10px solid red;
+              "
+            >
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>001</td>
+        </tr>
+      </tfoot>
+      <caption style="text-align: left; color: aqua">
+        intitulé du tableau
+      </caption>
     </table>
   </body>
 </html>
