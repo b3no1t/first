@@ -6,8 +6,16 @@
     <title>Table</title>
   </head>
   <body>
-    <table border="1" width="100%">
-      <caption>
+    <table
+      style="
+        width: 100%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: blue;
+        color: red;
+      "
+    >
+      <caption style="text-align: left; color: aqua">
         intitulé du tableau
       </caption>
       <tr>
@@ -15,16 +23,35 @@
         <th>titre de la colonne 2</th>
       </tr>
       <tr>
-        <td>item 1</td>
-        <td>item 1</td>
+        <td style="background: blue">item 1</td>
+        <td>item 2</td>
       </tr>
       <tr>
-        <td>item</td>
-        <td>item</td>
+        <td>item 1</td>
+        <td>item 2</td>
       </tr>
       <tr>
-        <td>item</td>
-        <td>item</td>
+        <td style="background: blue">item 1</td>
+        <td>item 2</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <!-- colspan = le nombre de colonne -->
+          <table
+            style="
+              margin: 0 auto;
+              width: 50%;
+              background: gray;
+              border: 10px solid red;
+            "
+          >
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+          </table>
+        </td>
       </tr>
     </table>
   </body>
